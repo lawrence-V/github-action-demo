@@ -13,7 +13,7 @@ jobs:
         node-version: [16.x, 18.x]
 
     env:
-      MODE: "dev"
+      MODE: ${{ secrets.MODE }}
 
     steps:
       - uses: actions/checkout@v3
